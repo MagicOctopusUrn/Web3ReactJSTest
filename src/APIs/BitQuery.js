@@ -14,7 +14,7 @@ export function sendRequest(query) {
                 headers: {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': '*',
-                    'X-API-KEY': 'BQYdMnpwa4GiX08y5v94MI6CxgXE1xjI',
+                    'X-API-KEY': '------',
                 },
             })
             .then(json => {
