@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Clock from './Components/Clock.js';
+import Heading from './Components/Heading.js';
+import Wallet from './Components/Wallet.js';
+import ContractForm from './Components/Forms/ContractForm.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Heading/>
+      <br/>
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-4">
+            <Wallet/>
+          </div>
+          <div class="col col-md-8">
+            <ContractForm/>
+          </div>
+        </div>
+
+        <hr/>
+
+        <small>This app was brought to you by the retards who created ReactJS. May they burn in hell.</small><br/>
+      </div>
+      <br/>
     </div>
   );
 }
